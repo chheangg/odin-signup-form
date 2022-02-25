@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form | The Odin Project</title>
+  <link rel='stylesheet' href='./style.css'>
+  <script defer src='main.js'></script>
+</head>
+<body>
+  <div class='main'>
+    <span class='img-bg'>
+      <div class='logo-container'>
+        <span class='logo'><img src='./odin-lined.png'></span>
+        <span class='logo-text'>ODIN</span>
+      </div>
+      <div class='credit'>
+        <p>Photo by <a href='https://unsplash.com/@haliewestphoto'>Halie West</a>
+        on <a href='https://unsplash.com/photos/25xggax4bSA'>Unsplash</a></p>
+      </div>
+    </span>
+    <span class='main-content'>
+      <div class='top-header'>
+        <p>This is not a real online service! You know you need something<br>
+        like this in your life to help you realize your deepest dreams.<br>
+        Sign up <i>now</i> to get started<br><br>
+        You <i>Know</i> you want to.</p>
+      </div>
+
+      <form>
+        <div class='mid-header'>
+          <h1>Let's do this!</h1>
+          <div class='names'>
+            <span class='box'>
+              <label for='first-name'>FIRST NAME</label>
+              <input type='text' id='first-name' minlength='3'>
+              <p class='text-error error'></p>
+            </span>
+            <span class='box'>
+              <label for='last-name'>LAST NAME</label>
+              <input type='text' id='last-name' minlength='3'>
+            </span>
+          </div>
+          <div class='contact'>
+            <span class='box'>
+              <label for='email'>EMAIL</label>
+              <input type='email' id='email' minlength='3'>
+              <p class='email-error error'></p>
+            </span>
+            <span class='box'>
+              <label for='phone-number'>PHONE NUMBER</label>
+              <input type='tel' id='phone-number' minlength='8' maxlength='8'>
+              <p class='tel-error error'></p>
+            </span>
+          </div>
+          <div class='password'>
+            <span class='box'>
+              <label for='password'>PASSWORD</label>
+              <input type='password' id='password' minlength="3">
+              <p class='password-error error'></p>
+            </span>
+            <span class='box'>
+              <label for='password-conf'>CONFIRM PASSWORD</label>
+              <input type='password' id='password-conf'>
+            </span>
+          </div>
+        </div>
+        <div class='bottom-header'>
+          <button type='submit'>Create Account</button>
+          <p>Already have an account? <a href='#'>Log in</a></p>
+        </div>
+        </form>
+
+    </span>
+  </div>
+</body>
+</html>

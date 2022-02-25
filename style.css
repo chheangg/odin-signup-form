@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  background-color: gray;
+}
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main divs */ 
+.main {
+  display: flex;
+  padding: 0 12.5vw;
+}
+
+.img-bg {
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('./halie-west-bg.jpg');
+  background-size: cover;
+}
+
+.main-content {
+  width: 45vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+/* Logo Container */
+.logo-container {
+  margin-top: 20vh;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1,1,1,0.5);
+}
+
+.logo img {
+  height: 7em;
+}
+
+.logo-text {
+  color: white;
+  font-family: 'Norse-Bold';
+  font-size: 6em;
+}
+
+.credit {
+  align-self: center;
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.credit a {
+  color: white;
+}
+
+/* Top-header */
+.top-header {
+  padding-top: 15vh;
+  min-height: calc(100vh/3);
+  padding-left: 2.5rem;
+  padding-bottom: 2.5em;
+}
+
+p, h1 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* Mid-header */
+.mid-header {
+  min-height: 30vh;
+  background-color: white;
+  padding: 1rem 2.5rem;
+  box-shadow: 0px 2px 5px -2px gray; /*any color you want*/
+}
+
+/* Form */
+.names, .contact, .password {
+  display: flex;
+  margin-top: 24px;
+  gap: 4rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box input {
+  width: 12.5vw;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1.5px solid #E5E7EB;
+  background-color: #F8F8F8;
+}
+
+label {
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+input:focus-visible, input:active, input:focus {
+  outline: 1px solid dodgerblue;
+  box-shadow: 1px 1px 4px 1px gray;
+}
+
+input:invalid {
+  outline: 1px solid red;
+  box-shadow: none;
+}
+
+/* Bottom-header */
+.bottom-header {
+  padding: 1rem 2.5rem;
+}
+
+button[type='submit'] {
+  background-color: #596D48;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 42px;
+}
+
+.bottom-header p {
+  margin-top: 32px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.bottom-header a {
+  color: #596D48;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
